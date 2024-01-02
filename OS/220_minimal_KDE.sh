@@ -1,21 +1,13 @@
 #! /bin/bash
 echo
 tput setaf 2
-echo "##############################################"
+echo "#######################################################"
 echo "##############   Install Minimal KDE   ###############"
-echo "##############################################"
+echo "######################################################"
 tput sgr0
 echo
-sudo pacman -S --noconfirm xorg-xlsclients glfw-wayland plasma-wayland-session sddm-kcm bluedevil plasma-pa kde-gtk-config kdeplasma-addons kinfocenter kscreen plasma-desktop plasma-systemmonitor plasma-workspace-wallpapers kdialog plasma-firewall ufw plasma-nm arcolinux-sddm-sugar-candy-git
-sudo pacman -S --noconfirm --needed kate xfce4-terminal nemo nemo-audio-tab nemo-emblems nemo-fileroller nemo-image-converter nemo-pastebin nemo-preview nemo-python nemo-seahorse nemo-share nemo-terminal nemo-theme-glacier
 
-echo
-tput setaf 2
-echo "##############################################"
-echo "####################  DONE   ####################"
-echo "##############################################"
-tput sgr0
-echo
+sudo pacman -S --noconfirm xorg-xlsclients glfw-wayland plasma-wayland-session sddm-kcm bluedevil plasma-pa kde-gtk-config kdeplasma-addons kinfocenter kscreen plasma-desktop plasma-systemmonitor plasma-workspace-wallpapers kdialog plasma-firewall ufw plasma-nm arcolinux-sddm-sugar-candy-git
 
 echo "######   Appling sddm settings #######"
 
@@ -47,4 +39,10 @@ sudo mv "$temp_file" "$target_file"
 # Clean up the temporary file
 rm -f "$temp_file"
 
-echo "######   DONE   ######"
+echo
+tput setaf 2
+echo "##################################################"
+echo "####################  DONE   ####################"
+echo "################################################"
+tput sgr0
+echo

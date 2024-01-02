@@ -1,7 +1,6 @@
 #! /bin/bash
 #
 repositories=(
-    "community=Include = /etc/pacman.d/mirrorlist"
     "arcolinux_repo=SigLevel = Optional TrustAll \nInclude = /etc/pacman.d/arcolinux-mirrorlist"
     "arcolinux_repo_3party=SigLevel = Optional TrustAll \nInclude = /etc/pacman.d/arcolinux-mirrorlist"
     #"arcolinux_repo__xlarge=SigLevel = Optional TrustAll \nInclude = /etc/pacman.d/arcolinux-mirrorlist"

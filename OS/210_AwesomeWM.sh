@@ -2,12 +2,12 @@
 echo
 tput setaf 2
 echo "##############################################"
-echo "##############   Install AwesomeWM   ###############"
+echo "###########   Install AwesomeWM   ############"
 echo "##############################################"
 tput sgr0
 echo
 
-sudo pacman -S --noconfirm --needed xorg-server xorg-xinit awesome ufw sddm arcolinux-sddm-sugar-candy-git xorg-xkill archlinux-logout-git networkmanager blueberry numlockx nitrogen pamac arandr variety
+sudo pacman -S --noconfirm --needed xorg-server xorg-xinit awesome ufw sddm arcolinux-sddm-sugar-candy-git xorg-xkill archlinux-logout-git networkmanager blueberry numlockx nitrogen pamac arandr
 
 sudo systemctl enable betterlockscreen@$USER
 echo “exec awesome” > ~/.xinitrc
@@ -15,7 +15,7 @@ echo “exec awesome” > ~/.xinitrc
 echo
 tput setaf 2
 echo "##############################################"
-echo "####################  DONE   ####################"
+echo "##################  DONE   ###################"
 echo "##############################################"
 tput sgr0
 echo

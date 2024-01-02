@@ -1,13 +1,23 @@
 #!/bin/bash
 
+echo
+tput setaf 2
+echo "########################################################"
+echo "###### Install extra AwesomeWM related Packages ########"
+echo "########################################################"
+tput sgr0
+echo
+
+sudo pacman -S --noconfirm --needed xorg-server xorg-xinit awesome ufw sddm arcolinux-sddm-sugar-candy-git xorg-xkill archlinux-logout-git networkmanager blueberry numlockx nitrogen pamac arandr
+
 echo "######   Coping AwesomeWM config  #######"
 # Target folder to be copied
-TARGET_FOLDER="$(dirname "$(realpath "$0")")/awesome"
+TARGET_FOLDER="$(dirname "$(realpath "$0")")/way_dotfiles/awesome"
 # Path of destination folder
 DESTINATION_FOLDER="$HOME/.config"
 cp -R "${source_dir}/$TARGET_FOLDER" $DESTINATION_FOLDER
 # Target folder to be copied
-TARGET_FOLDER="$(dirname "$(realpath "$0")")/awesome/rofi"
+TARGET_FOLDER="$(dirname "$(realpath "$0")")/way_dotfiles/awesome/rofi"
 # Path of destination folder
 DESTINATION_FOLDER="$HOME/.config"
 cp -R "${source_dir}/$TARGET_FOLDER" $DESTINATION_FOLDER
@@ -75,3 +85,11 @@ TMP_FILE=$(mktemp)
 # Replacement logic
 sed "s/\(${KNOWN_SENTENCE}\).*$/\1 ${NEW_STRING}/" "$FILE_NAME" > "$TMP_FILE" && mv "$TMP_FILE" "$FILE_NAME"
 echo "Complete!!"
+
+echo
+tput setaf 2
+echo "#################################################################"
+echo "###### Done Installing extra AwesomeWM related Packages ########"
+echo "################################################################"
+tput sgr0
+echo
