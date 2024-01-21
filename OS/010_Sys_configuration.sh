@@ -31,7 +31,7 @@ temp_file=$(mktemp)
 # Use sed to replace the line with the known sentence with the new string
 sed "s/^${KNOWN_SENTENCE}.*/${NEW_STRING}/" "$target_file" > "$temp_file" && mv "$temp_file" "$target_file"
 
-pacman --noconfirm -S networkmanager grub efibootmgr os-prober
+pacman --noconfirm -S networkmanager grub efibootmgr os-prober sudo
 systemctl enable NetworkManager
 echo "########## Installing GRUB ############"
 grub-install --target=x86_64-efi --bootloader-id=GRUB --efi-directory=/boot/efi --removable
