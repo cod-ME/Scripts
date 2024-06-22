@@ -8,7 +8,7 @@ echo "####################################################"
 tput sgr0
 echo
 
-sudo pacman -S --noconfirm --needed visual-studio-code-bin
+sudo pacman -S --noconfirm --needed vscodium kate neovim
 
 echo
 tput setaf 2

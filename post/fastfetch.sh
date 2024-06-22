@@ -7,5 +7,5 @@ TEMP_LOGO_PATH="/tmp/pokemon-logo.txt"
 pokemon-colorscripts --no-title -s -r > "$TEMP_LOGO_PATH"
 
 # Run fastfetch with the newly generated logo
-fastfetch --logo "$TEMP_LOGO_PATH" --config /home/xT#/Scripts/post/fastfetch.jsonc
+fastfetch --logo "$TEMP_LOGO_PATH" --config /home/xT/Scripts/post/fastfetch.jsonc
 

@@ -4,7 +4,8 @@
 #Erik key
 sudo pacman-key --lsign-key 74F5DE85A506BF64
 
-sudo pacman -Syy --noconfirm --needed arcolinux-mirrorlist-git arcolinux-keyring
+sudo pacman -Syy --noconfirm --needed arcolinux-mirrorlist-git
+sudo pacman -Syy --noconfirm --needed arcolinux-keyring
 
 echo
 tput setaf 2

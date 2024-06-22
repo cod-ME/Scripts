@@ -1,0 +1,10 @@
+fastfetch = modify .zshrc and add:
+                                    source $ZSH/oh-my-zsh.sh
+                                    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+                                    source /home/xT/Scripts/post/fastfetch.sh
+set-screen-temp.sh = install wl-gammarelay from pikaur, and copy this script to /usr/local/bin/set-screen-temp.sh
+screen-temp.service = copy this to /etc/systemd/system/screen-temp.service
+                    run sudo systemctl daemon-reload
+                        sudo systemctl enable screen-temp.service
+                        sudo systemctl start screen-temp.service
+                        sudo systemctl status screen-temp.service

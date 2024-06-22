@@ -1,0 +1,16 @@
+[Unit]
+Description=Set Screen Temperature Based on Time of Day
+After=graphical.target
+
+[Service]
+Type=simple
+User=hyprlin
+Environment="DISPLAY=:0"
+Environment="XDG_RUNTIME_DIR=/run/user/$(id -u <username>)"
+ExecStart=/usr/local/bin/set-screen-temp.sh
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
+
