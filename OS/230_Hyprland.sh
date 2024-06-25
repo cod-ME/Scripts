@@ -9,7 +9,7 @@ tput sgr0
 echo
 
 echo "################   Installing Dependencies   ################"
-Dependencies="gdb ninja gcc cmake meson libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info cpio tomlplusplus"
+Dependencies="gdb gcc cmake libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols cairo pango seatd libxkbcommon xcb-util-wm xorg-xwayland libinput libliftoff libdisplay-info cpio tomlplusplus"
 
 # Function to check if Pikaur is installed
 check_pikaur_installed() {
@@ -40,9 +40,9 @@ check_pikaur_installed
 #install_aur_package
 echo "##########  Installing Hyprland  #############"
 
-sudo pacman -S --noconfirm --needed xorg-xlsclients xdg-desktop-portal-hyprland glfw-wayland qt5-wayland qt6-wayland dunst hyprland
-sudo pacman -S --noconfirm --needed sddm ufw arcolinux-sddm-sugar-candy-git wofi rofi waybar polkit
-sudo pacman -S --noconfirm --needed kitty xfce4-terminal nemo nemo-audio-tab nemo-emblems nemo-fileroller nemo-image-converter nemo-pastebin nemo-preview nemo-python nemo-seahorse nemo-share nemo-terminal nemo-theme-glacier
+sudo pacman -S --noconfirm --needed xorg-xlsclients xdg-desktop-portal-hyprland glfw-wayland qt5-wayland qt6-wayland swaync hyprland hypridle hyprlock xdg-desktop-portal-hyprland aylurs-gtk-shell cliphist eww wlogout aylurs-gtk-shell glm meson ninja swappy grim xclip
+sudo pacman -S --noconfirm --needed sddm ufw arcolinux-sddm-sugar-candy-git wofi rofi-wayland waybar polkit network-manager-applet pipewire socat ncdu nvtop pavucontrol kdeconnect
+sudo pacman -S --noconfirm --needed kitty xfce4-terminal nemo nemo-audio-tab nemo-emblems nemo-fileroller nemo-image-converter nemo-pastebin nemo-preview nemo-python nemo-seahorse nemo-share nemo-terminal nemo-theme-glacier btop
 
 echo
 tput setaf 2

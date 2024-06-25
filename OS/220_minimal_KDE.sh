@@ -7,7 +7,7 @@ echo "######################################################"
 tput sgr0
 echo
 
-sudo pacman -S --noconfirm xorg-xlsclients glfw-wayland plasma-wayland-session sddm-kcm bluedevil plasma-pa kde-gtk-config kdeplasma-addons kinfocenter kscreen plasma-desktop plasma-systemmonitor plasma-workspace-wallpapers kdialog plasma-firewall ufw plasma-nm arcolinux-sddm-sugar-candy-git
+sudo pacman -S --noconfirm xorg-xlsclients glfw-wayland plasma-wayland-session sddm-kcm bluedevil plasma-pa kde-gtk-config kdeplasma-addons kinfocenter kscreen plasma-desktop plasma-systemmonitor plasma-workspace-wallpapers kdialog plasma-firewall ufw plasma-nm arcolinux-sddm-sugar-candy-git maliit-keyboard
 
 echo "######   Appling sddm settings #######"
 

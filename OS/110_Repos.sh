@@ -7,6 +7,7 @@ repositories=(
     "multilib=Include = /etc/pacman.d/mirrorlist"
     #"chaotic-aur=SigLevel = Required DatabaseOptional \nInclude = /etc/pacman.d/chaotic-mirrorlist"
     "chaotic-aur=SigLevel = Optional TrustAll \nInclude = /etc/pacman.d/chaotic-mirrorlist"
+    "meARCH_repo=SigLevel = Optional TrustAll \nServer = file:////home/xT/meARCH/meARCH_repo/pacman_packages"
 )
 
 # Loop through the array and add repositories to pacman.conf

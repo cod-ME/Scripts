@@ -50,7 +50,7 @@ temp_file=$(mktemp)
 # Use sed to replace the line with the known sentence with the new string
 sed "s/^${KNOWN_SENTENCE}.*/${NEW_STRING}/" "$target_file" > "$temp_file" && mv "$temp_file" "$target_file"
 
-pacman -Syy --noconfirm  grub efibootmgr os-prober sudo networkmanager
+pacman -Syy --noconfirm  grub efibootmgr os-prober sudo networkmanager fastfetch
 systemctl enable NetworkManager
 echo
 tput setaf 2
