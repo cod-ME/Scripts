@@ -7,7 +7,7 @@ echo "######################################################"
 tput sgr0
 echo
 
-sudo pacman -S --noconfirm --needed xournalapp rnote
+sudo pacman -S --noconfirm --needed rnote
 
 echo
 tput setaf 2

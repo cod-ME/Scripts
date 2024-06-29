@@ -4,6 +4,9 @@ echo "************** Currently chrooted into your future system ***********"
 echo ""
 echo ""
 echo "############### Post installations system configurations #############"
+pacman -Syy --noconfirm  zsh zsh-autosuggestions zsh-syntax-highlighting
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 ln -sf /usr/share/zoneinfo/Europe/Berlin /etc/localtime
 hwclock --systohc
 # File path

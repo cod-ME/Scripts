@@ -34,14 +34,15 @@ install_pikaur() {
 install_aur_package() {
     pikaur -S --noconfirm $Dependencies
 }
-sudo pacman -S --noconfirm --needed git
+sudo pacman -S --noconfirm --needed git base-devel
 
 check_pikaur_installed
 #install_aur_package
 echo "##########  Installing Hyprland  #############"
 
-sudo pacman -S --noconfirm --needed xorg-xlsclients xdg-desktop-portal-hyprland glfw-wayland qt5-wayland qt6-wayland swaync hyprland hypridle hyprlock xdg-desktop-portal-hyprland aylurs-gtk-shell cliphist eww wlogout aylurs-gtk-shell glm meson ninja swappy grim xclip
+sudo pacman -S --noconfirm --needed xorg-xlsclients xdg-desktop-portal-hyprland glfw-wayland qt5-wayland qt6-wayland swaync hyprland hypridle hyprlock xdg-desktop-portal-hyprland aylurs-gtk-shell cliphist eww wlogout aylurs-gtk-shell glm meson ninja swappy grim xclip intel-ucode
 sudo pacman -S --noconfirm --needed sddm ufw arcolinux-sddm-sugar-candy-git wofi rofi-wayland waybar polkit network-manager-applet pipewire socat ncdu nvtop pavucontrol kdeconnect
+sudo pacman -S --noconfirm --needed cmake make gdb ninja gcc libxcb xcb-proto xcb-util xcb-util-keysyms libxfixes libx11 libxcomposite xorg-xinput libxrender pixman wayland-protocols wlroots-git cairo pango hyprwayland-scanner
 sudo pacman -S --noconfirm --needed kitty xfce4-terminal nemo nemo-audio-tab nemo-emblems nemo-fileroller nemo-image-converter nemo-pastebin nemo-preview nemo-python nemo-seahorse nemo-share nemo-terminal nemo-theme-glacier btop
 
 echo

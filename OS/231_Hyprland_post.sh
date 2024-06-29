@@ -24,7 +24,7 @@ DESTINATION_FOLDER="$HOME/.cache/"
 cp -R "$TARGET_FOLDER/wal" $DESTINATION_FOLDER
 
 echo "########  Installing Themes  ##########"
-pikaur -S --needed trayer mpvpaper nitch nerd-fonts-inter geticons
+pikaur -S --needed trayer mpvpaper nitch nerd-fonts-inter geticons python-pywal
 sudo usermod -aG video $USER
 sudo usermod -aG input $USER
 

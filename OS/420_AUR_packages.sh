@@ -3,7 +3,7 @@
 echo "########  Installing AUR packages  #######"
 
 # AUR package to install
-AUR_PACKAGE="anytype-bin waterfox-bin thorium-browser-bin"
+AUR_PACKAGE="anytype-bin thorium-browser-bin"
 
 # Function to check if Pikaur is installed
 check_pikaur_installed() {

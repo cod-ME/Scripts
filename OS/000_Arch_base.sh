@@ -43,6 +43,24 @@ if [ $? -eq 0 ]; then
 else
     echo "Failed to mount $device."
 fi
+
+mkdir -p /mnt/home
+tput setaf 2
+read -p "Enter the disk you want to mount as /mnt/home;" disk
+tput sgr0
+device="/dev/${disk}"
+if [ ! -b "$device"]; then
+	echo "The specified disk does not exist; $device"
+	exit 1
+fi
+echo "Mounting $device to /mnt/home..."
+mount "$device" /mnt/home
+if [ $? -eq 0 ]; then
+	echo "Mounted $device successfully to /mnt/home."
+else
+	echo "Failed to mount $device."
+fi
+
 mkdir -p /mnt/boot/efi
 tput setaf 2
 read -p "Enter the disk you want to mount as /mnt/boot/efi: " disk
